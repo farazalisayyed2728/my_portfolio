@@ -8,8 +8,36 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <h1>Hi friends</h1>
-    <img src="{% static 'images/spidy.jpg' %}" alt="My Image">
-    
+    {% comment %} <h1>Hi friends</h1>
+    <img src="{% static 'images/spidy.jpg' %}" alt="My Image"> {% endcomment %}
+
+    {% comment %} #nav bar section {% endcomment %}
+<nav id= "navbar" class="flex s-around bg-color">
+    <div class="left-nav">
+        <h2 class="t-white">My Portfolio</h2>
+
+        <div class = "right-nav">
+            <ul>
+                <li><a href="#home" class="t-white">Home<i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white">About<i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white">Skills<i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#projects" class="t-white">Projects<i class="fa-solid fa-briefcase"></i></a></li>
+                <li><a href="#contact" class="t-white">Contact<i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </div>
+
+    </div>
+    </nav>
+    {% comment %} home section {% endcomment %}
+
+    <section id="home" class="flex s-around sw-80 m-auto">
+    <div class="home-left flext items-center">
+        <div class="home-content">
+            <h6 class="popinss">Hi, I'm </h6>
+            <h1 class="t-white">FARAZ ALI</h1>
+            <h4 class="t-white">Backend Developer</h4>
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+        </div>
+    </section>
 </body>
 </html>
