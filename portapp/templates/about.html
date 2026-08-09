@@ -1,0 +1,122 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Faraz Ali</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+    <div class="nav-container">
+
+        <a href="/" class="logo">
+            FARAZ<span>.</span>
+        </a>
+
+        <div class="right-nav">
+            <ul>
+                <li><a href="/"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="/about/" class="active"><i class="fa-solid fa-user"></i> About</a></li>
+                <li><a href="/skills/"><i class="fa-solid fa-code"></i> Skills</a></li>
+                <li><a href="/projects/"><i class="fa-solid fa-briefcase"></i> Projects</a></li>
+                <li><a href="/contact/"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="page-section">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+            <p>Get To Know Me</p>
+            <h1>About <span>Me</span></h1>
+        </div>
+
+        <div class="about-content">
+
+            <div class="about-image">
+                <div class="about-image-box">
+                    <img src="{% static 'images/profile.png' %}"
+                         alt="Faraz Ali">
+                </div>
+            </div>
+
+            <div class="about-text">
+
+                <h2>I'm Faraz Ali</h2>
+
+                <h3>Backend Developer</h3>
+
+                <p>
+                    I am a BCA student and aspiring Backend Developer
+                    passionate about building web applications using
+                    Python and Django.
+                </p>
+
+                <p>
+                    I enjoy working with databases, developing APIs,
+                    implementing authentication and creating efficient
+                    backend systems.
+                </p>
+
+                <p>
+                    My goal is to become a professional backend developer
+                    and build reliable applications that solve real-world
+                    problems.
+                </p>
+
+                <div class="about-info">
+
+                    <div>
+                        <strong>Name:</strong>
+                        <span>Faraz Ali</span>
+                    </div>
+
+                    <div>
+                        <strong>Role:</strong>
+                        <span>Backend Developer</span>
+                    </div>
+
+                    <div>
+                        <strong>Language:</strong>
+                        <span>English, Hindi</span>
+                    </div>
+
+                </div>
+
+                <a href="{% static 'pdf/Faraz_Ali_C_Resume.docx' %}"
+                   target="_blank"
+                   class="btn resume-btn">
+                    <i class="fa-solid fa-file"></i>
+                    View Resume
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
