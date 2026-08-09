@@ -1,0 +1,195 @@
+```html
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Faraz Ali</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+
+        <a href="/" class="logo">
+            FARAZ<span>.</span>
+        </a>
+
+        <div class="right-nav">
+            <ul>
+                <li><a href="/"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="/about/"><i class="fa-solid fa-user"></i> About</a></li>
+                <li><a href="/skills/"><i class="fa-solid fa-code"></i> Skills</a></li>
+                <li><a href="/projects/"><i class="fa-solid fa-briefcase"></i> Projects</a></li>
+                <li><a href="/contact/" class="active"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+<section class="page-section">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+            <p>Let's Work Together</p>
+            <h1>Contact <span>Me</span></h1>
+        </div>
+
+
+        <div class="contact-container">
+
+
+            <!-- Contact Information -->
+
+            <div class="contact-info">
+
+                <h2>Let's Talk</h2>
+
+                <p>
+                    Have a project idea, job opportunity or just want
+                    to connect? Feel free to contact me.
+                </p>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div>
+                        <h4>Email</h4>
+                        <p>your-email@gmail.com</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div>
+                        <h4>Location</h4>
+                        <p>India</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <p>Connect with me on LinkedIn</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact Form -->
+
+            <div class="contact-form">
+
+                <form method="POST">
+
+                    {% csrf_token %}
+
+                    <div class="form-group">
+
+                        <label for="name">Your Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">Your Email</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subject">Subject</label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="Enter subject"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">Message</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="btn resume-btn">
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
+```
