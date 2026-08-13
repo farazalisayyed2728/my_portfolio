@@ -278,6 +278,13 @@
         transform: translateY(-4px);
     }
 
+    .social-links a img {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    display: block;
+}
+
 
     /* =========================
     HOME RIGHT
