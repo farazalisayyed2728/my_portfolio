@@ -1,4 +1,4 @@
-{% load static %}
+{% comment %} {% load static %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -161,6 +161,236 @@
                         Live Demo
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html> {% endcomment %}
+
+
+{% load static %} 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Faraz Ali</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="nav-container">
+
+        <a href="{% url 'home' %}" class="logo">
+            FARAZ<span>.</span>
+        </a>
+
+        <div class="right-nav">
+
+            <ul>
+
+                <li>
+                    <a href="{% url 'home' %}">
+                        <i class="fa-solid fa-house"></i>
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{% url 'about' %}">
+                        <i class="fa-solid fa-user"></i>
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{% url 'skills' %}">
+                        <i class="fa-solid fa-code"></i>
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{% url 'projects' %}" class="active">
+                        <i class="fa-solid fa-briefcase"></i>
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{% url 'contact' %}">
+                        <i class="fa-solid fa-envelope"></i>
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<section class="page-section">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+
+            <p>My Recent Work</p>
+
+            <h1>My <span>Projects</span></h1>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <!-- ONLINE VOTING -->
+
+            <div class="project-card">
+
+                <div class="project-icon">
+                    <i class="fa-solid fa-check-to-slot"></i>
+                </div>
+
+                <h2>Online Voting System</h2>
+
+                <p>
+                    A Django-based voting platform where users can
+                    register, authenticate, vote for candidates and
+                    view election results.
+                </p>
+
+                <div class="project-tech">
+
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>SQLite</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+
+                </div>
+
+                <div class="project-links">
+
+                    <a href="#" class="project-btn">
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                    </a>
+
+                    <a href="#" class="project-btn">
+                        Live Demo
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- STUDY TRACKER -->
+
+            <div class="project-card">
+
+                <div class="project-icon">
+                    <i class="fa-solid fa-book"></i>
+                </div>
+
+                <h2>Study Tracker</h2>
+
+                <p>
+                    A web application for managing study activities,
+                    tracking learning progress and organizing
+                    study tasks.
+                </p>
+
+                <div class="project-tech">
+
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>PostgreSQL</span>
+                    <span>HTML</span>
+
+                </div>
+
+                <div class="project-links">
+
+                    <a href="#" class="project-btn">
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                    </a>
+
+                    <a href="#" class="project-btn">
+                        Live Demo
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT BOOK -->
+
+            <div class="project-card">
+
+                <div class="project-icon">
+                    <i class="fa-solid fa-address-book"></i>
+                </div>
+
+                <h2>Contact Book</h2>
+
+                <p>
+                    A contact management application that allows
+                    users to create, update, delete and manage
+                    their contacts.
+                </p>
+
+                <div class="project-tech">
+
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>SQLite</span>
+                    <span>Bootstrap</span>
+
+                </div>
+
+                <div class="project-links">
+
+                    <a href="#" class="project-btn">
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                    </a>
+
+                    <a href="#" class="project-btn">
+                        Live Demo
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
                 </div>
 
             </div>
