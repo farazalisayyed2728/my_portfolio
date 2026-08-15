@@ -14,10 +14,10 @@
 
     body {
         font-family: Arial, Helvetica, sans-serif;
-        /* background: #0a0f1c;
-        color: #ffffff; */
-        background: #03554e;
+        background: #0a0f1c;
         color: #ffffff;
+        /* background: #03554e;
+        color: #ffffff; */
     }
 
     a {
@@ -118,7 +118,7 @@
         background:
             radial-gradient(
                 circle at 80% 50%,
-                rgba(0, 217, 255, 0.12),
+                rgba(27, 90, 92, 0.12),
                 transparent 35%
             ),
             #0a0f1c;
